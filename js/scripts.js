@@ -34,4 +34,14 @@ $(document).ready(function() {
       $(this).remove();
     });
   });
+
+  $("button#meow").click(function() {
+    $(this).after("<p>Meow</p>");
+    $("button#woof").after("<p>Woof</p>");
+  });
+
+  $("button#woof").click(function() {
+    $(this).after("<p>Woof!</p>");
+    $("button#meow").after("<p>Meow!</p>");
+  });
 });
